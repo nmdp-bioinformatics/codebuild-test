@@ -2,13 +2,18 @@ version: 0.2
 
 env:
   variables:
-    JAVA_HOME: "/usr/lib/jvm/java-8-openjdk-amd64"
+    TEST_HOME: "/usr/lib/jvm/java-11-openjdk-amd64"
 
 
 phases:
   install:
     commands:
+      - echo Java
+      - echo $JAVA_HOME
       - echo Installing maven
+      - echo $TEST_HOME
+      - echo Installing maven
+      - echo `mvn --version`
       - apt-get update -y
       - apt-get install -y maven
     finally:
@@ -16,4 +21,4 @@ phases:
 
   build:
     commands:
-      - mvn compile
+      - mvn --version
