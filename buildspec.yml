@@ -1,0 +1,19 @@
+version: 0.2
+
+env:
+  variables:
+    JAVA_HOME: "/usr/lib/jvm/java-8-openjdk-amd64"
+
+
+phases:
+  install:
+    commands:
+      - echo Installing maven
+      - apt-get update -y
+      - apt-get install -y maven
+    finally:
+      - echo "Done installing"
+
+  build:
+    commands:
+      - mvn compile
