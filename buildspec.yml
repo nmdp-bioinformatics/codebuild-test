@@ -15,4 +15,4 @@ phases:
 
   build:
     commands:
-      - mvn package
+      - mvn --batch-mode package
