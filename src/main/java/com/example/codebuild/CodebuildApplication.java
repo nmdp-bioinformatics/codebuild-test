@@ -8,7 +8,7 @@ public class CodebuildApplication {
 
 	public static void main(String[] args) {
     System.out.println("Hello CodeBuild");
-    System.out.println("oh oh..")
+    System.out.println("oh oh..");
 		SpringApplication.run(CodebuildApplication.class, args);
 	}
 
