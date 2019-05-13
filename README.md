@@ -1,2 +1,4 @@
+![Build Status](https://codebuild.us-east-2.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiWnRRK1JtKzBuL0YyaTZRSW40VmpqQS9NQmhUSnZpejBmRHJlYTNzejB5bkltNElyTmt5TGJpbHJWY1N4bHpNekF3NFk2eXVJdjVhVVYrRllobVdSQXNjPSIsIml2UGFyYW1ldGVyU3BlYyI6IkRqVEpnekpLZjNkUnRVVHciLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=master)
+
 # codebuild-test
 Repo to test codebuild
