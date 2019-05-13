@@ -2,23 +2,17 @@ version: 0.2
 
 env:
   variables:
-    TEST_HOME: "/usr/lib/jvm/java-11-openjdk-amd64"
+    APP_NAME: "CodeBuild Test"
 
 
 phases:
   install:
     commands:
-      - echo Java
       - echo $JAVA_HOME
-      - echo Installing maven
-      - echo $TEST_HOME
-      - echo Installing maven
-      - echo `mvn --version`
-      - apt-get update -y
-      - apt-get install -y maven
+      - mvn --version
     finally:
       - echo "Done installing"
 
   build:
     commands:
-      - mvn --version
+      - mvn package
